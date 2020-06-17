@@ -1,2 +1,2 @@
-# PowerShell Scripts
-Office 365 and beyond
+# PSforO365
+Office365 PowerShell Commands Tips

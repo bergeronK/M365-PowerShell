@@ -1,0 +1,3 @@
+$oulocation = Read-host "Enter OU Location"
+
+Get-ADUser -Filter * -SearchBase "$oulocation" -Properties proxyaddresses | Foreach {Set-ADUser -identity $_ -Add ` @{'ProxyAddresses'=@(("SMTP:{0}{1}@{2}"-f $_.GivenName[0],$_.surname, 'lammred.com'))}

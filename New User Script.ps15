@@ -1,0 +1,6 @@
+﻿#New User Creation Script
+Import-Module ActiveDirectory
+$Surname = read-host "Please enter the user's surname"
+$GivenName = read-host "Please enter the user's given name"
+$SAMAccountName = read-host "Please enter the intended logon name"
+New-ADUser -SamAccountName $Surname -GivenName $GivenName -Surname $Surname -AccountPassword (Read-Host -AsSecureString "Please enter an account password") -ChangePasswordAtLogon $false -Path 'OU=WebReview Users,DC=dfir,DC=local' -Enabled $true

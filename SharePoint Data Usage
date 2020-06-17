@@ -1,0 +1,1 @@
+$cred = Get-Credential Connect-PnPOnline -Url “https://mytenant-admin.sharepoint.com” -Credentials $cred $sites = Get-PnPTenantSite -Detailed | select Url, StorageUsage, StorageMaximumLevel, @{label=”Usage in %”;Expression={[math]::Round($_.StorageUsage*100/$_.StorageMaximumLevel,2)}} $sites | Export-Csv C:SiteStorage.csv Output

@@ -1,0 +1,1 @@
+﻿Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Add-MailboxPermission -User umsa@northwaybank.onmicrosoft.com -AccessRights FullAccess -InheritanceType all

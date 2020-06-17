@@ -1,0 +1,6 @@
+foreach($i in Get-Mailbox -ResultSize Unlimited) {
+  $i.EmailAddresses |
+    ?{$_.AddressString -like '*@contoso.com'} | %{
+      Set-Mailbox $i -EmailAddresses @{remove=$_}
+    }
+}

@@ -1,0 +1,1 @@
+﻿New-ManagementRoleAssignment –Role "ApplicationImpersonation" –User umsa@northwaybank.onmicrosoft.com
