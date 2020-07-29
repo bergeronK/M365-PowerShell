@@ -1,0 +1,1 @@
+Get-Mailbox -resultsize unlimited | Get-MailboxStatistics | where {$_.Lastlogontime -lt (get-date).AddDays(-60)} | Select displayName,LastLoggedOnUserAccount,LastLogonTime | Export-csv -path c:\temp\lastlogon.csv
