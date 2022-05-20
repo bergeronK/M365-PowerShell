@@ -1,2 +1,2 @@
 # PSforO365
-Office365 PowerShell Commands Tips
+Microsoft 365 PowerShell Commands Tips
