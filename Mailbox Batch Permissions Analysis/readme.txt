@@ -1,3 +1,5 @@
+All credit to the Microsoft FastTrack team for this nugget. 
+
 The BatchAnalysis-generic.xlsm spreadsheet is designed to be an extension of the Find-MailboxDelegates script at https://aka.ms/find-mailboxdelegates on GitHub. 
 
 If you get a secuirty banner on the spreadsheet that the Macros are blocked, open the file properties in Windows Explorer and 'unblock' the file. 
